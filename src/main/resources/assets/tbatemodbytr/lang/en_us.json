@@ -1,5 +1,7 @@
 {
   "item.tbatemodbytr.mythril": "Mythril",
   "item.tbatemodbytr.raw_mythril": "Raw Mythril",
-  "item.tbatemodbytr.mysterious_egg": "Mysterious Egg"
+  "item.tbatemodbytr.mysterious_egg": "Mysterious Egg",
+  "block.tbatemodbytr.mythril_block": "Mythril Block",
+  "block.tbatemodbytr.mythril_ore": "Mythril Ore"
 }

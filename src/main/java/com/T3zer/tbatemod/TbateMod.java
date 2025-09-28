@@ -1,5 +1,6 @@
 package com.T3zer.tbatemod;
 
+import com.T3zer.tbatemod.block.ModBlocks;
 import com.T3zer.tbatemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -35,7 +36,9 @@ public class TbateMod {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -54,6 +57,10 @@ public class TbateMod {
             event.accept(ModItems.MYTHRIL);
             event.accept(ModItems.RAW_MYTHRIL);
             event.accept(ModItems.MYSTERIOUS_EGG);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.MITHRIL_BLOCK);
+            event.accept(ModBlocks.MYTHRIL_ORE);
         }
     }
 
