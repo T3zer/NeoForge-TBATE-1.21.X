@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 1000,
+  "experience": 2,
+  "ingredient": {
+    "item": "tbatemodbytr:raw_mythril"
+  },
+  "result": {
+    "id": "tbatemodbytr:mythril"
+  }
+}

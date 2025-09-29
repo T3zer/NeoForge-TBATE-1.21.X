@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 2000,
+  "experience": 2,
+  "ingredient": {
+    "item": "tbatemodbytr:mythril_deepslate_ore"
+  },
+  "result": {
+    "id": "tbatemodbytr:mythril"
+  }
+}

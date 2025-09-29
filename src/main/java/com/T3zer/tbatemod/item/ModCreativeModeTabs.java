@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept((ModBlocks.MITHRIL_BLOCK));
                         output.accept((ModBlocks.MYTHRIL_ORE));
+                        output.accept((ModBlocks.MYTHRIL_DEEPSLATE_ORE));
                     }).build());
 
 
