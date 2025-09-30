@@ -14,9 +14,10 @@ import java.awt.*;
 import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
+    //list the creative tab in a deferred register and link the tab to the mod id
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TbateMod.MOD_ID);
-
+    //Creative tab for Items of TBATE mod
     public static final Supplier<CreativeModeTab> TBATE_ITEMS_TAB = CREATIVE_MODE_TAB.register("tbate_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MYSTERIOUS_EGG.get()))
                     .title(Component.translatable("creativetab.tbatemod.tbate_items"))
@@ -26,7 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept((ModItems.RAW_MYTHRIL));
                         output.accept((ModItems.CHISEL));
                     }).build());
-
+    //Creative tab for Blocks of TBATE mod
     public static final Supplier<CreativeModeTab> TBATE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("tbate_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.MITHRIL_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TbateMod.MOD_ID, "tbate_items_tab"))
@@ -37,7 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept((ModBlocks.MYTHRIL_DEEPSLATE_ORE));
                     }).build());
 
-
+    //method who is called in the main class to add the creative tab in the game
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }

@@ -54,7 +54,7 @@ public class TbateMod {
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add block or item to creative tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.MYTHRIL);

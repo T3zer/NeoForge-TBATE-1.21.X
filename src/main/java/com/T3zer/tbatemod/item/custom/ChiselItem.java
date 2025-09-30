@@ -14,10 +14,10 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
 import java.util.Map;
-
+//creation of an item based on minecraft items
 public class ChiselItem extends Item{
     private static final Map<Block, Block> CHISEL_MAP =
-            //list each item who will switch together as linked list or not
+            //unchangable dictionnary of items who will change in another one
             Map.of(
                     Blocks.STONE, Blocks.STONE_BRICKS,
                     Blocks.END_STONE, Blocks.END_STONE_BRICKS,
@@ -25,28 +25,30 @@ public class ChiselItem extends Item{
                     Blocks.GOLD_BLOCK, Blocks.STONE
 
             );
-
+    //call the item constructor to have basic item properties as durability, max stack...
     public ChiselItem(Properties properties){
         super(properties);
 
     }
-
+    //execute when write click on a block with the item
     @Override
     public InteractionResult useOn(UseOnContext context) {
+        //the world of the user
         Level level = context.getLevel();
+        // the block who the user clicked on
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
-    //Make the chisel item loose 1 durabilty by hurting him
+        //verify if the block is in the map and if we are server side
         if(CHISEL_MAP.containsKey(clickedBlock)) {
             if(!level.isClientSide()) {
                 level.setBlockAndUpdate(context.getClickedPos(), CHISEL_MAP.get(clickedBlock).defaultBlockState());
-
+                //Make the chisel item loose 1 durabilty by hurting him
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
-                //play a sound on use
+                //play a sound
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
             }
         }
-
+        //return the result
         return InteractionResult.SUCCESS;
     }
 }

@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
+//it's where we need to add each item to make them referenced in the game
 public class ModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TbateMod.MOD_ID);
