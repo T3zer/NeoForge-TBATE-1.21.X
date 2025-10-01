@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept((ModItems.MYSTERIOUS_EGG));
                         output.accept((ModItems.RAW_MYTHRIL));
                         output.accept((ModItems.CHISEL));
+                        output.accept((ModItems.RADISH));
                     }).build());
     //Creative tab for Blocks of TBATE mod
     public static final Supplier<CreativeModeTab> TBATE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("tbate_blocks_tab",
