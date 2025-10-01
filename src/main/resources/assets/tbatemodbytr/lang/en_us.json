@@ -15,5 +15,10 @@
   "block.tbatemodbytr.magic_block": "Magic Block",
 
   "creativetab.tbatemod.tbate_items": "Tbate Items",
-  "creativetab.tbatemod.tbate_blocks": "Tbate Blocks"
+  "creativetab.tbatemod.tbate_blocks": "Tbate Blocks",
+
+  "tooltip.tbatemod.magic_block.tooltip": "This Block is very §9MAGICAL§r",
+  "tooltip.tbatemod.chisel.shift_sown": "This Item can chisel Blocks into Bricks",
+  "tooltip.tbatemod.chisel": "Press §eShift§r for mor Information",
+  "tooltip.tbatemod.radish.tooltip": "Taste really Great !"
 }
