@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                         output.accept((ModBlocks.MITHRIL_BLOCK));
                         output.accept((ModBlocks.MYTHRIL_ORE));
                         output.accept((ModBlocks.MYTHRIL_DEEPSLATE_ORE));
+                        output.accept((ModBlocks.MAGIC_BLOCK));
                     }).build());
 
     //method who is called in the main class to add the creative tab in the game
