@@ -19,6 +19,9 @@ import javax.swing.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
+    // Add the Block into the game
+
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(TbateMod.MOD_ID);
 
@@ -44,6 +47,8 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+
+    // Same for Items
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
