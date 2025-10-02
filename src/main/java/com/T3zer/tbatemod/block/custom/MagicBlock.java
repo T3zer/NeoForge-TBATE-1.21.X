@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.fml.common.Mod;
+import com.T3zer.tbatemod.util.ModTags;
 
 import java.util.List;
 
@@ -53,13 +54,17 @@ public class MagicBlock extends Block{
             if(itemEntity.getItem().getItem() == Items.DANDELION){
                 itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
             }
-            // ... Same for Skeleton skull dumbass :)
-            if(itemEntity.getItem().getItem() == Items.SKELETON_SKULL){
+            // ... Same for a special tag referred in the JSON FILE "transformable_item" :)
+            if(isValidItem(itemEntity.getItem())){
                 itemEntity.setItem(new ItemStack(Items.WITHER_SKELETON_SKULL, itemEntity.getItem().getCount()));
             }
         }
 
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
