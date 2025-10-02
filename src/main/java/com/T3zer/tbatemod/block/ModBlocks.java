@@ -25,7 +25,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(TbateMod.MOD_ID);
 
-    public static final DeferredBlock<Block> MITHRIL_BLOCK = registerBlock("mythril_block",
+    public static final DeferredBlock<Block> MYTHRIL_BLOCK = registerBlock("mythril_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 

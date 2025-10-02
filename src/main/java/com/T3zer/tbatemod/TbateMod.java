@@ -62,7 +62,7 @@ public class TbateMod {
             event.accept(ModItems.MYSTERIOUS_EGG);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.MITHRIL_BLOCK);
+            event.accept(ModBlocks.MYTHRIL_BLOCK);
             event.accept(ModBlocks.MYTHRIL_ORE);
         }
     }

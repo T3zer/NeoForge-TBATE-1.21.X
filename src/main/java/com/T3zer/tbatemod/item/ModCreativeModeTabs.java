@@ -32,11 +32,11 @@ public class ModCreativeModeTabs {
                     }).build());
     //Creative tab for Blocks of TBATE mod
     public static final Supplier<CreativeModeTab> TBATE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("tbate_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.MITHRIL_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.MYTHRIL_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TbateMod.MOD_ID, "tbate_items_tab"))
                     .title(Component.translatable("creativetab.tbatemod.tbate_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept((ModBlocks.MITHRIL_BLOCK));
+                        output.accept((ModBlocks.MYTHRIL_BLOCK));
                         output.accept((ModBlocks.MYTHRIL_ORE));
                         output.accept((ModBlocks.MYTHRIL_DEEPSLATE_ORE));
                         output.accept((ModBlocks.MAGIC_BLOCK));
