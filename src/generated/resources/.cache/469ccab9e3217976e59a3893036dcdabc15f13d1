@@ -1,4 +1,4 @@
-// 1.21	2025-10-05T18:34:41.0446951	Item Models: tbatemodbytr
+// 1.21	2025-10-05T19:31:29.2656661	Item Models: tbatemodbytr
 57c995efc62959251705b73714907dc6c9b3553f assets/tbatemodbytr/models/item/chisel.json
 42d4cd86e08350b29703005678721ad3cd7c83d2 assets/tbatemodbytr/models/item/frostfire_ice.json
 a5e5afab77ee1ff02053b9a0bfff75bddecee4e2 assets/tbatemodbytr/models/item/mysterious_egg.json
@@ -7,6 +7,7 @@ a5e5afab77ee1ff02053b9a0bfff75bddecee4e2 assets/tbatemodbytr/models/item/mysteri
 c8214e23a9f2ac5a9cec023c0ce28874d44c7a70 assets/tbatemodbytr/models/item/mythril_button.json
 0b204dc19bbfa2f093a2f14fc32a48a31ca12119 assets/tbatemodbytr/models/item/mythril_door.json
 d2909db8be25b3a627188dc534f11ef9cc18019b assets/tbatemodbytr/models/item/mythril_fence.json
+29503de778ac0ab7cbcf8c9efda753959aeb3457 assets/tbatemodbytr/models/item/mythril_hammer.json
 c91cda19f498fbb33cbe0305a3d34aae55b2868b assets/tbatemodbytr/models/item/mythril_hoe.json
 30d0289f9fd6ca64849e249837eb9566f8b8ecb6 assets/tbatemodbytr/models/item/mythril_pickaxe.json
 4d2e207f6f053a0750bce89f27ceb8d32a1ed291 assets/tbatemodbytr/models/item/mythril_shovel.json

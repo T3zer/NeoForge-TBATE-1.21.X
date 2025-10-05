@@ -41,5 +41,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.MYTHRIL_HOE.get());
 
 
+
     }
 }

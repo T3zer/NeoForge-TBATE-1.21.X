@@ -3,6 +3,7 @@ package com.T3zer.tbatemod.item;
 import com.T3zer.tbatemod.TbateMod;
 import com.T3zer.tbatemod.item.custom.ChiselItem;
 import com.T3zer.tbatemod.item.custom.FuelItem;
+import com.T3zer.tbatemod.item.custom.HammerItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -55,6 +56,10 @@ public static final DeferredItem<AxeItem> MYTHRIL_AXE = ITEMS.register("mythril_
     public static final DeferredItem<ShovelItem> MYTHRIL_SHOVEL = ITEMS.register("mythril_shovel",
             () -> new ShovelItem(ModToolTires.MYTHRIL, new Item.Properties()
                     .attributes(ShovelItem.createAttributes(ModToolTires.MYTHRIL,1.5f, 0.0f))));
+
+    public static final DeferredItem<HammerItem> MYTHRIL_HAMMER = ITEMS.register("mythril_hammer",
+            () -> new HammerItem(ModToolTires.MYTHRIL, new Item.Properties()
+                    .attributes(HammerItem.createAttributes(ModToolTires.MYTHRIL,7f, -3.8f))));
 
 
 

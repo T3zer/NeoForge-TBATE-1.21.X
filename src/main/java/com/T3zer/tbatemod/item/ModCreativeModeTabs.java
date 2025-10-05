@@ -38,6 +38,8 @@ public class ModCreativeModeTabs {
                         output.accept((ModItems.MYTHRIL_SHOVEL));
                         output.accept((ModItems.MYTHRIL_HOE));
 
+                        output.accept((ModItems.MYTHRIL_HAMMER));
+
 
                     }).build());
     //Creative tab for Blocks of TBATE mod
