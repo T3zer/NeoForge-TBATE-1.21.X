@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "tbatemodbytr:block/mythril_block"
+  }
+}

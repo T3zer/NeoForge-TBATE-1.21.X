@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mythril",
+  "key": {
+    "#": {
+      "item": "tbatemodbytr:mythril"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "tbatemodbytr:mythril_stairs"
+  }
+}

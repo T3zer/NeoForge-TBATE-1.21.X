@@ -1,0 +1,10 @@
+{
+  "values": {
+    "tbatemodbytr:frostfire_ice": {
+      "burn_time": 2400
+    },
+    "tbatemodbytr:starlight_ashes": {
+      "burn_time": 1200
+    }
+  }
+}

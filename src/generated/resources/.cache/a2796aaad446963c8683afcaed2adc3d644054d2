@@ -1,0 +1,7 @@
+// 1.21	2025-10-05T12:47:30.4695814	Tags for minecraft:block mod id tbatemodbytr
+5572c81742b8cbbd916637978f33ba1b5a209801 data/minecraft/tags/block/fences.json
+7540d78cb0f4ab568267d1120d4475fa607dda6f data/minecraft/tags/block/fence_gates.json
+5b31b728f25c98d8a2ef27a22e25b3ec352d2f48 data/minecraft/tags/block/mineable/pickaxe.json
+3628e85768f0b1b8268ecbab6135261af99976f2 data/minecraft/tags/block/needs_diamond_tool.json
+1debc525926248eedd2775bd2cb36dfc3f738ad4 data/minecraft/tags/block/needs_iron_tool.json
+f05992b83b73e441b33148e4400d973567aeea0b data/minecraft/tags/block/walls.json

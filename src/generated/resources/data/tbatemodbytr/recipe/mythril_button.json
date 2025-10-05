@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "mythril",
+  "ingredients": [
+    {
+      "item": "tbatemodbytr:mythril"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbatemodbytr:mythril_button"
+  }
+}
