@@ -2,6 +2,7 @@ package com.T3zer.tbatemod.datagen;
 
 import com.T3zer.tbatemod.TbateMod;
 import com.T3zer.tbatemod.block.ModBlocks;
+import com.T3zer.tbatemod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -36,6 +37,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCE_GATES).add(ModBlocks.MYTHRIL_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.MYTHRIL_WALL.get());
 
+        tag(ModTags.Blocks.NEED_MYTHRIL_TOOL)
+                .add(ModBlocks.MYTHRIL_BLOCK.get())
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_MYTHRIL_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEED_MYTHRIL_TOOL);
 
     }
 }

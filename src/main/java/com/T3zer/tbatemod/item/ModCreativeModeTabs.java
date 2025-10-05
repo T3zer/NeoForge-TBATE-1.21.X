@@ -23,12 +23,22 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.tbatemod.tbate_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept((ModItems.MYTHRIL));
-                        output.accept((ModItems.MYSTERIOUS_EGG));
                         output.accept((ModItems.RAW_MYTHRIL));
+
                         output.accept((ModItems.CHISEL));
                         output.accept((ModItems.RADISH));
+                        output.accept((ModItems.MYSTERIOUS_EGG));
+
                         output.accept((ModItems.STARLIGHT_ASHES));
                         output.accept((ModItems.FROSTFIRE_ICE));
+
+                        output.accept((ModItems.MYTHRIL_SWORD));
+                        output.accept((ModItems.MYTHRIL_PICKAXE));
+                        output.accept((ModItems.MYTHRIL_AXE));
+                        output.accept((ModItems.MYTHRIL_SHOVEL));
+                        output.accept((ModItems.MYTHRIL_HOE));
+
+
                     }).build());
     //Creative tab for Blocks of TBATE mod
     public static final Supplier<CreativeModeTab> TBATE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("tbate_blocks_tab",

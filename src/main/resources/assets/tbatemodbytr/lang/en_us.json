@@ -8,6 +8,12 @@
   "item.tbatemodbytr.frostfire_ice": "Frostfire Ice",
   "item.tbatemodbytr.starlight_ashes": "Starlight Ashes",
 
+  "item.tbatemodbytr.mythril_sword": "Mythril Sword",
+  "item.tbatemodbytr.mythril_pickaxe": "Mythril Pickaxe",
+  "item.tbatemodbytr.mythril_axe": "Mythril Axe",
+  "item.tbatemodbytr.mythril_shovel": "Mythril Shovel",
+  "item.tbatemodbytr.mythril_hoe": "Mythril Hoe",
+
   "block.tbatemodbytr.mythril_block": "Mythril Block",
   "block.tbatemodbytr.mythril_ore": "Mythril Ore",
   "block.tbatemodbytr.mythril_deepslate_ore": "Mythril Deepslate Ore",
@@ -16,6 +22,7 @@
 
   "block.tbatemodbytr.mythril_stairs": "Mythril Stairs",
   "block.tbatemodbytr.mythril_slab": "Mythril Slab",
+
 
   "block.tbatemodbytr.mythril_button": "Mythril Button",
   "block.tbatemodbytr.mythril_pressure_plate": "Bismuth Pressure Plate",
