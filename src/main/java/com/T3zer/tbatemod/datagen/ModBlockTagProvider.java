@@ -31,5 +31,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MYTHRIL_ORE.get())
                 .add(ModBlocks.MYTHRIL_DEEPSLATE_ORE.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.MYTHRIL_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.MYTHRIL_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.MYTHRIL_WALL.get());
+
+
     }
 }

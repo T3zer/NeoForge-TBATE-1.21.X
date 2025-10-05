@@ -19,9 +19,9 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
 
-public class ModBlockLootProvider extends BlockLootSubProvider {
+public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
-    protected ModBlockLootProvider(HolderLookup.Provider registries) {
+    protected ModBlockLootTableProvider(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
@@ -33,7 +33,23 @@ public class ModBlockLootProvider extends BlockLootSubProvider {
         add(ModBlocks.MYTHRIL_ORE.get(),
                     block -> createOreDrop(ModBlocks.MYTHRIL_ORE.get(), ModItems.RAW_MYTHRIL.get()));
         add(ModBlocks.MYTHRIL_DEEPSLATE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.MYTHRIL_DEEPSLATE_ORE.get(), ModItems.RAW_MYTHRIL.get(),2,5 ));
+                block -> createMultipleOreDrops(ModBlocks.MYTHRIL_DEEPSLATE_ORE.get(), ModItems.RAW_MYTHRIL.get(),
+                        2,5 ));
+
+        dropSelf(ModBlocks.MYTHRIL_STAIRS.get());
+        add(ModBlocks.MYTHRIL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MYTHRIL_SLAB.get()));
+
+        dropSelf(ModBlocks.MYTHRIL_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.MYTHRIL_BUTTON.get());
+
+        dropSelf(ModBlocks.MYTHRIL_FENCE.get());
+        dropSelf(ModBlocks.MYTHRIL_FENCE_GATE.get());
+        dropSelf(ModBlocks.MYTHRIL_WALL.get());
+        dropSelf(ModBlocks.MYTHRIL_TRAPDOOR.get());
+
+        add(ModBlocks.MYTHRIL_DOOR.get(),
+                block -> createDoorTable(ModBlocks.MYTHRIL_DOOR.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

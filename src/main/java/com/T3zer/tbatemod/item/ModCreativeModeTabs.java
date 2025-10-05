@@ -39,7 +39,20 @@ public class ModCreativeModeTabs {
                         output.accept((ModBlocks.MYTHRIL_BLOCK));
                         output.accept((ModBlocks.MYTHRIL_ORE));
                         output.accept((ModBlocks.MYTHRIL_DEEPSLATE_ORE));
+
                         output.accept((ModBlocks.MAGIC_BLOCK));
+
+
+                        output.accept(ModBlocks.MYTHRIL_PRESSURE_PLATE);
+                        output.accept(ModBlocks.MYTHRIL_BUTTON);
+
+                        output.accept(ModBlocks.MYTHRIL_FENCE);
+                        output.accept(ModBlocks.MYTHRIL_FENCE_GATE);
+                        output.accept(ModBlocks.MYTHRIL_WALL);
+
+                        output.accept(ModBlocks.MYTHRIL_DOOR);
+                        output.accept(ModBlocks.MYTHRIL_TRAPDOOR);
+
                     }).build());
 
     //method who is called in the main class to add the creative tab in the game

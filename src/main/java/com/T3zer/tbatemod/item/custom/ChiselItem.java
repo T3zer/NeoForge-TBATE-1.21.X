@@ -1,6 +1,7 @@
 package com.T3zer.tbatemod.item.custom;
 
 
+import com.T3zer.tbatemod.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -17,6 +18,7 @@ import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import org.apache.commons.lang3.ObjectUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -52,6 +54,8 @@ public class ChiselItem extends Item{
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
                 //play a sound
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
         //return the result
@@ -64,6 +68,10 @@ public class ChiselItem extends Item{
             tooltipComponents.add(Component.translatable("tooltip.tbatemod.chisel.shift_sown"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.tbatemod.chisel"));
+        }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null){
+            tooltipComponents.add(Component.literal("Last Block Change at " + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);

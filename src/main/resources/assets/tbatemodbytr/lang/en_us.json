@@ -14,6 +14,19 @@
 
   "block.tbatemodbytr.magic_block": "Magic Block",
 
+  "block.tbatemodbytr.mythril_stairs": "Mythril Stairs",
+  "block.tbatemodbytr.mythril_slab": "Mythril Slab",
+
+  "block.tbatemodbytr.mythril_button": "Mythril Button",
+  "block.tbatemodbytr.mythril_pressure_plate": "Bismuth Pressure Plate",
+
+  "block.tbatemodbytr.mythril_fence": "Mythril Fence",
+  "block.tbatemodbytr.mythril_fence_gate": "Mythril Fence Gate",
+  "block.tbatemodbytr.mythril_wall": "Mythril Wall",
+
+  "block.tbatemodbytr.mythril_door": "Mythril Door",
+  "block.tbatemodbytr.mythril_trapdoor": "Mythril Trapdoor",
+
   "creativetab.tbatemod.tbate_items": "Tbate Items",
   "creativetab.tbatemod.tbate_blocks": "Tbate Blocks",
 
