@@ -1,7 +1,8 @@
-// 1.21	2025-10-05T18:34:41.0499837	Tags for minecraft:item mod id tbatemodbytr
+// 1.21	2025-10-08T17:52:07.4952943	Tags for minecraft:item mod id tbatemodbytr
 71514ae42a76a06fded7448d7c80f5c1d59a80f6 data/minecraft/tags/item/axes.json
 fd5cf0c76ebc576558ef8aa5b8e6e8da85591a3b data/minecraft/tags/item/hoes.json
 ef187a6e9dcb5c170b744f327cc26d13fca6f9fc data/minecraft/tags/item/pickaxes.json
 9308fb59ddad9f778d5ee234f7fc79fb683e6328 data/minecraft/tags/item/shovels.json
 d70f4c56b05c94c21628053dfb671db74b7563fe data/minecraft/tags/item/swords.json
+cfbdd46e042075689e00c355346e552b602c0ef2 data/minecraft/tags/item/trimmable_armor.json
 c89999fec2ae99d215ecbbcbb1957e9c467e4991 data/tbatemodbytr/tags/item/transformable_items.json

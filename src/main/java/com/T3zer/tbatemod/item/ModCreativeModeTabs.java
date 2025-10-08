@@ -40,6 +40,11 @@ public class ModCreativeModeTabs {
 
                         output.accept((ModItems.MYTHRIL_HAMMER));
 
+                        output.accept(ModItems.MYTHRIL_HELMET);
+                        output.accept(ModItems.MYTHRIL_CHESTPLATE);
+                        output.accept(ModItems.MYTHRIL_LEGGINGS);
+                        output.accept(ModItems.MYTHRIL_BOOTS);
+
 
                     }).build());
     //Creative tab for Blocks of TBATE mod
@@ -64,6 +69,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.MYTHRIL_DOOR);
                         output.accept(ModBlocks.MYTHRIL_TRAPDOOR);
+
 
                     }).build());
 
