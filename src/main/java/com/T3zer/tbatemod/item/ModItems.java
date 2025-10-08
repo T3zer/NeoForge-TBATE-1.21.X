@@ -4,6 +4,7 @@ import com.T3zer.tbatemod.TbateMod;
 import com.T3zer.tbatemod.item.custom.ChiselItem;
 import com.T3zer.tbatemod.item.custom.FuelItem;
 import com.T3zer.tbatemod.item.custom.HammerItem;
+import com.T3zer.tbatemod.item.custom.ModArmorItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -24,8 +25,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_MYTHRIL = ITEMS.register("raw_mythril",
             () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> MYSTERIOUS_EGG = ITEMS.register("mysterious_egg",
             () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> RADISH = ITEMS.register("radish",
             ()-> new Item(new Item.Properties().food(ModFoodProperties.RADISH)){
                 @Override
@@ -62,16 +65,16 @@ public static final DeferredItem<AxeItem> MYTHRIL_AXE = ITEMS.register("mythril_
                     .attributes(HammerItem.createAttributes(ModToolTires.MYTHRIL,7f, -3.8f))));
 
     public static final DeferredItem<ArmorItem> MYTHRIL_HELMET = ITEMS.register("mythril_helmet",
-            () -> new ArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
     public static final DeferredItem<ArmorItem> MYTHRIL_CHESTPLATE = ITEMS.register("mythril_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+            () -> new ModArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
     public static final DeferredItem<ArmorItem> MYTHRIL_LEGGINGS = ITEMS.register("mythril_leggings",
             () -> new ArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
     public static final DeferredItem<ArmorItem> MYTHRIL_BOOTS = ITEMS.register("mythril_boots",
-            () -> new ArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+            () -> new ModArmorItem(ModArmorMaterials.MYTHRIL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
 
